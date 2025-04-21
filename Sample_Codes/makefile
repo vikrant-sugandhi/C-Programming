@@ -1,11 +1,11 @@
-#makefile, makefile
+#makefile, makefile-v0p2
 
 CC = gcc
 #MODULE_NAME = data_types_and_sizes
 #CFLAGS = -Wall -Wextra -Wpedantic -Werror -std=c99 -O2
 
 CFLAGS = -Wall -Wextra -Wpedantic -Werror -std=c99 -O0 -g -fsanitize=address,undefined
-TARGET = encapsulation
+TARGET = default
 OUTPUT = $(TARGET)
 SOURCE = $(TARGET).c
 
