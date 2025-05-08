@@ -12,6 +12,9 @@ SOURCE = $(TARGET).c
 $(OUTPUT):
 #	$(CC) $(CFLAGS) -o $(OUTPUT) -c $(SOURCE)
 	$(CC) $(CFLAGS) -o $(OUTPUT) $(SOURCE)
+
+.PHONY: clean
+
 clean:
 	cp -u -r ./ ../make_clean_backup
 	rm -f *.o $(OUTPUT)
