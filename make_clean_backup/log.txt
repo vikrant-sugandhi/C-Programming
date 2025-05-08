@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -Wpedantic -Werror -std=c99 -O0 -g -fsanitize=address,undefined -o hello hello.c
