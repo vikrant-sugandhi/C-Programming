@@ -1,0 +1,30 @@
+THE c PROGRAMMING LANGUAGE Second Edition, Brian W. Kernighan • Dennis M. Ritchie
+CHAPTER I
+1.5 Character Input and Output
+1.5.1 File Copying:
+1. A program that copies its input to its output one character at a time.
+2. Verify that the expression getchar() I = EOF is 0 or 1.
+3. Write a program to print the value of EOF
+
+1.5.2 Character Counting
+4. A program to count characters in input (using long int).
+5. A program to count characters in input (using double,for, while).
+
+1.5.3 Line Counting
+6. A program to count lines in input.
+7. Write a program to count blanks, tabs, and newlines.
+8. Write a program to copy its input to its output, replacing each string of one or more blanks by a single blank.
+9. Write a program to copy its input to its output, replacing each tab by \ t, each backspace by \b, and each backslash by \ \. 
+   This makes tabs and backspaces visible in an unambiguous way.
+
+1.5.4 Word Counting
+11. A program to count lines, words, and characters in input.
+12. How would you test the word count program? What kinds of input are most likely to uncover bugs if there are any?
+13. Write a program that prints its input one word per line.
+
+1.6 Arrays
+14. 
+
+
+
+

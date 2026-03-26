@@ -9,9 +9,9 @@ TARGET = default
 OUTPUT = $(TARGET)
 SOURCE = $(TARGET).c
 
-$(OUTPUT):
+$(OUTPUT):$(SOURCE)
 #	$(CC) $(CFLAGS) -o $(OUTPUT) -c $(SOURCE)
-	$(CC) $(CFLAGS) -o $(OUTPUT) $(SOURCE)
+	$(CC) -D$(MACRO) $(CFLAGS) -o $(OUTPUT) $(SOURCE)
 
 .PHONY: clean
 
@@ -31,4 +31,7 @@ clean:
 
 # How to remove/delete executable files (aka files without extension) only
 # https://stackoverflow.com/questions/856463/how-to-remove-delete-executable-files-aka-files-without-extension-only
-
+# By executing the below command while compiling the code, we get all intermediate files in the current directory along with the executable.
+# https://www.geeksforgeeks.org/c/compiling-a-c-program-behind-the-scenes/
+# gcc -Wall -save-temps filename.c –o filename
+# 
